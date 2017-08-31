@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 <!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
-<!--	<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>Me2Baby</title>
 
@@ -13,6 +13,8 @@
 	<link rel="stylesheet" media="screen" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" media="screen" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="plugin/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="plugin/lightGallery-master/dist/css/lightgallery.min.css"/>
 	<link rel="stylesheet" media="screen" href="assets/css/style.css" type="text/css">
     
 
@@ -52,13 +54,38 @@
         
         </div>
     </div>
+    <div class="container">
 	<div class="slick-carousel">
-        <div class="slick-item">
+        <div class="single-item">
+            <div class="img-1"></div>
+            <div class="img-2"></div>
+            <div class="img-3"></div>
+<!--
         <img class="" src="https://www.newhdwallpapers.in/wp-content/uploads/2015/05/Long-Hair-Baby-Girl-Sunset-Landscape-Wallpaper.jpg" />
             
             <img class="" src="http://prima.cdnds.net/assets/17/07/1600x800/landscape-1487089763-premature-baby.jpg" />
             <img class="" src="http://ghk.h-cdn.co/assets/17/10/1600x800/landscape-1488909968-baby-reflexology.jpg" />
+-->
         </div>
+        </div>
+        
+        <h1 class="text-center"> Products</h1>
+        <div class="text-center">
+        <img alt="product" src="assets/img/smiling-boy@3x.png"  class="boy"/>
+        </div>
+        
+        <div id="lightgallery">
+  <a class="col-md-4 col-sm-12" href="http://ghk.h-cdn.co/assets/17/10/1600x800/landscape-1488909968-baby-reflexology.jpg">
+      <img src="http://ghk.h-cdn.co/assets/17/10/1600x800/landscape-1488909968-baby-reflexology.jpg" class="img-responsive"/>
+      <div class="card-overlay"></div>
+      <div class="card-content"></div>
+  </a>
+  <a class="col-md-4 col-sm-12" href="https://www.newhdwallpapers.in/wp-content/uploads/2015/05/Long-Hair-Baby-Girl-Sunset-Landscape-Wallpaper.jpg">
+      <img src="https://www.newhdwallpapers.in/wp-content/uploads/2015/05/Long-Hair-Baby-Girl-Sunset-Landscape-Wallpaper.jpg" class="img-responsive"/>
+  </a>
+  
+</div>
+        
         </div>
 	
 
@@ -66,10 +93,23 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
 	<script src="assets/js/main.js" type="text/javascript"></script>
 <script type="text/javascript" src="plugin/slick/slick.min.js"></script>
+    
+    <!-- A jQuery plugin that adds cross-browser mouse wheel support. (Optional) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+    
+    <script src="plugin/lightGallery-master/dist/js/lightgallery.min.js"></script>
 				
 	<script>
         $(document).ready(function(){
-            $('.single-item').slick();
+            $('.single-item').slick({
+                 autoplay: true,
+                 autoplaySpeed: 2000
+            });
+
+    $(document).ready(function() {
+        $("#lightgallery").lightGallery(); 
+    });
+
         });
 	</script>
 
