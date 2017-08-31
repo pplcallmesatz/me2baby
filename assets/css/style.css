@@ -1,0 +1,110 @@
+body {
+    background-image: url("../img/pattern@3x.png");
+    background-repeat: repeat;
+    background-size: contain;
+    font-family: 'Pacifico', cursive;
+
+}
+.header {
+    background: #ea4c89;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+.flex-box {
+    display: flex;
+    display: -webkit-flex;
+}
+.flex-box.item-middle {
+    align-items: center
+}
+.flex-box.item-center{
+    justify-content: center;
+}
+.flex-box.item-space-around {
+    justify-content: space-between;
+}
+.new-born{
+    width: 150px;
+}
+.junior {
+    width:200px;
+}
+.so-facebook, .so-twitter {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    font-size:  22px;
+    color: #fff;
+    text-align: center;
+    border-radius: 40px;
+    line-height: 40px;
+    vertical-align: middle;
+}
+.so-facebook {
+    background-color: #3b5998;
+    margin-right: 10px; 
+}
+.so-twitter {
+    background-color: #0084b4;
+}
+.phone img {
+    width: 30px;
+    margin-right: 10px;
+}
+.phone {
+    color: #ffffff;
+    font-size: 20px;
+    	letter-spacing: 0.1px;
+    margin-top: 10px;
+}
+.navigation{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.navigation .flex-content {
+	
+	
+}
+.navigation .flex-content a{
+    width: 100px;
+	height: 100px;
+    display: inline-block;
+    border-radius: 100px;
+	background-color: #ffffff;
+	box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.2);
+	border: solid 1px #ea4c89;
+    margin: 0 15px;
+    color: #ea4c89;
+    text-align: center;
+    padding-top: 35px;
+    font-size: 18px;
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+
+
+.navigation .flex-content.contact a{
+    padding-top: 25px !important;
+}
+.navigation .flex-content a:hover {
+    background-color: #ea4c89;
+    color: #fff;
+}
+.container {
+/*    widslick carousel
+    th: 1024px !important;*/
+    
+}
+.slick-item img{
+    width: 100%;
+    height: auto;
+}
+@media (max-width: 1024px){
+    body {
+          width: 1024px !important;
+    }
+}
+
